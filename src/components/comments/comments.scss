@@ -1,0 +1,19 @@
+.userlist-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 300px;
+    background-color: whitesmoke;
+}
+
+.userlist-container div {
+    flex-basis: 50%;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container form div {
+    align-self: flex-start;
+}

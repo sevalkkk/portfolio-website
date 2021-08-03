@@ -1,0 +1,46 @@
+.app {
+    height: 100vh;
+
+    .sections {
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: lightsalmon;
+        position: relative;
+        top: 70px;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none; //for firefox
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        >* {
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start;
+        }
+    }
+}
+
+.media-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-comment {
+    background-color: #ecf0f1;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 300ms all;
+
+    &:hover {
+        background: red;
+        color: #fff;
+    }
+}
